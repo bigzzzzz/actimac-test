@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class fr.zenith_caen.app.ZenithDeCaen { <init>(...); }
+

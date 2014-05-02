@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+		<script type="text/javascript">  
+              $(function() {  
+                $('nav#menu').mmenu({  
+                  // options object  
+                }, {  
+                  // configuration object  
+                  selectedClass: "active"  
+                });  
+              }); 
+        </script> 
+
+        <!--[if IE]>
+		      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+        <title>Zénith de Caen</title>
+    </head>
+    <body>
+        <section class="header" onclick="$('nav#menu').show('blind', { direction: 'left' }, 300);">test</section>
+        <nav id="menu">
+           <ul>
+             <li class="active">
+                 <a href="demo.html">Basic Horizontal Menu</a>
+                 <ul>
+                     <li><a href="#">First sub-menu</a></li>
+                     <li><a href="#">Second sub-menu</a>
+                         <ul>
+                             <li><a href="#">First sub-sub-menu</a></li>
+                             <li><a href="#">Second sub-sub-menu</a></li>
+                             <li><a href="#">Third sub-sub-menu</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">Third sub-menu</a></li>
+                 </ul>
+             </li>
+           </ul>
+        </nav>
+    </body>
+</html>
